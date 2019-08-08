@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './JokeList.css';
 import axios from 'axios';
 
 class JokeList extends Component {
@@ -26,7 +27,14 @@ class JokeList extends Component {
   render() { 
     return (
       <div className='JokeList'>
-        <h1>DAD JOKES</h1>
+        <div className="JokeList-sidebar">
+          <h1 className="JokeList-title">
+            <span>DAD</span> JOKES
+          </h1>
+          <img src="https://assets.dryicons.com/uploads/icon/svg/8935/5401c4ee-e703-4f89-9f52-ae174ef235e7.svg" alt=""/>
+          <button className="JokeList-getmore">Get Jokes!</button>
+        </div>
+        
         <div className='JokeList-jokes'>
           {this.state.jokes.map(j => (
             <div>{j}</div>
