@@ -33,7 +33,7 @@ class Joke extends Component {
     } else if (this.props.votes > 9){
       return "em em-smiley";
     } else if (this.props.votes > 6){
-      return "em em-slightly_smilling_face";
+      return "em em-slightly_smiling_face";
     } else if (this.props.votes > 3){
       return "em em-neutral_face";
     } else if (this.props.votes > 0){
